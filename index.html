@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Google - Ativa.ai</title>
+    <style>
+        body {
+            background: linear-gradient(180deg, #000000, #ffa500);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 80%;
+        }
+        .left, .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title {
+            font-size: 48px; /* Ajuste este valor conforme necessário */
+            font-weight: bold;
+            font-style: normal;
+        }
+        .title .ativa {
+            color: #fff; /* Branco */
+        }
+        .title .ai {
+            color: #ffa500; /* Laranja */
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+            color: #ffa500;
+            background-color: #000;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .auth-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #4285f4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .auth-button:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="title"><span class="ativa">ATIVA.</span><span class="ai">ai</span></div>
+        </div>
+        <div class="right">
+            <button class="auth-button" onclick="window.location.href='/google_login'">Se logar com o Google</button>
+        </div>
+    </div>
+    <div class="footer">
+        O botão acima faz o acesso ao Gmail e faz a extração de cada caixa e traz para um arquivo xlsx.
+    </div>
+</body>
+</html>
